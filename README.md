@@ -8,12 +8,16 @@ The System is going to allow anyone to kickstart ther business by providing:
 1) Add property for selling.
 
 
-Technical background:
-It is based on: 
-1) React Native Expo
-2) Expo Tabs @50
-3) NativeBase (TailWindCSS)
-4) Supabase
-5) PWA
+## Technical information:
 
-Project Kick-Started with [Create-Expo-Stack](https://createexpostack.com/)
+### Our app is made using the cutting-edge technologies that are:
+  1) NodeJs
+  2) Typescrypt v5
+  3) React Native (Expo)
+  4) Expo Router/Tabs v@50
+  5) NativeWind v4 (TailWindCSS)
+  6) NativeWindUI v1
+  7) Supabase v2
+  8) PWA
+
+## Project Kick-Started with [Create-Expo-Stack](https://createexpostack.com/)
