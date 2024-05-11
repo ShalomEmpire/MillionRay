@@ -15,3 +15,5 @@ It is based on:
 3) NativeBase (TailWindCSS)
 4) Supabase
 5) PWA
+
+Project Kick-Started with [Create-Expo-Stack](https://createexpostack.com/)
