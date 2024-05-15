@@ -1,27 +1,47 @@
-import { Tabs } from 'expo-router';
-import { StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from 'expo-router/tabs';
 
-import { TabBarIcon } from '~/components/TabBarIcon';
-
-export default function TabLayout() {
+export default function Layout() {
   return (
-    <Tabs
-      screenOptions={{
-        headerShown: false,
-        tabBarActiveTintColor: 'black',
-      }}>
+    <Tabs>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Imóveis',
+          headerShown: false,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="home-outline" size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="contacts"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Contatos',
+          headerShown: false,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="person-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="services"
+        options={{
+          title: 'Atendimentos',
+          headerShown: false,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="chatbubble-ellipses-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="activities"
+        options={{
+          title: 'Atividades',
+          headerShown: false,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="calendar-clear-outline" size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
