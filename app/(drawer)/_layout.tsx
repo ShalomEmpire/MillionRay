@@ -21,6 +21,9 @@ export default function DrawerLayout() {
           options={{
             drawerLabel: 'Perfil de Usuário',
             headerTitle: 'Perfil de Usuário',
+            drawerIcon: ({ size, color }) => (
+              <Ionicons name="person-circle-outline" size={size} color={color} />
+            ),
           }}
         />
         <Drawer.Screen
@@ -28,6 +31,9 @@ export default function DrawerLayout() {
           options={{
             drawerLabel: 'Configurações',
             headerTitle: 'Configurações',
+            drawerIcon: ({ size, color }) => (
+              <Ionicons name="settings-outline" size={size} color={color} />
+            ),
           }}
         />
         <Drawer.Screen
@@ -35,6 +41,9 @@ export default function DrawerLayout() {
           options={{
             drawerLabel: 'Sair',
             headerTitle: 'Sair',
+            drawerIcon: ({ size, color }) => (
+              <Ionicons name="power-outline" size={size} color={color} />
+            ),
           }}
         />
       </Drawer>
