@@ -1,19 +1,10 @@
-// tailwind.config.js
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{tsx, ts, jsx, js}',
-    '../../packages/**/*.{js,jsx,ts,tsx}',
-    './components/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./index.{js,ts,tsx}', './app/**/*.{js,ts,tsx}', './components/**/*.{js,ts,tsx}'],
+
+  presets: [require('nativewind/preset')],
   theme: {
-    extend: {
-      fontFamily: {
-        'rubik-regular': ['Rubik_400Regular'],
-        'rubik-medium': ['Rubik_500Medium'],
-        'rubik-bold': ['Rubik_700Bold'],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
