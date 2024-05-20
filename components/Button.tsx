@@ -8,10 +8,10 @@ interface ButtonProps extends TouchableOpacityProps {
 
 export function Button({ title, onPress }: ButtonProps) {
   return (
-    <TouchableOpacity
-      className="flex w-full items-center justify-center rounded-md bg-red-500 py-3"
-      onPress={onPress}>
-      <Text className="font-rubik-medium text-center text-white">{title}</Text>
+    <TouchableOpacity onPress={onPress}>
+      <View className="flex w-full items-center justify-center rounded-md bg-red-500 py-3">
+        <Text className="font-rubik-medium text-center">{title}</Text>
+      </View>
     </TouchableOpacity>
   );
 }
